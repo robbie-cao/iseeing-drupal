@@ -4,7 +4,7 @@
 <div <?php print danland_page_class($page['sidebar_first'], $page['sidebar_second']); ?>>
 <div id="header">
 <div id="header-wrapper">
-	<?php if ($logo): ?> 
+	<?php if ($logo): ?>
 		<div id="logo-wrapper">
 			<div class="logo">
 				<a href="<?php print $base_path ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a>
@@ -26,7 +26,7 @@
 			<?php endif; ?>
         	</div><!-- end branding wrapper -->
 	<?php endif; ?>
-	
+
 	<?php if ($page['search_box']): ?>
 		<div id="search-box">
 			<?php print render ($page['search_box']); ?>
@@ -53,9 +53,9 @@
 <div id="rounded-menu-left"></div>
  <?php if ($main_menu || $page['superfish_menu']): ?>
       <div id="<?php print $main_menu ? 'nav' : 'superfish' ; ?>">
-        <?php 
+        <?php
 					     if ($main_menu) {
-		          print theme('links__system_main_menu', array('links' => $main_menu));  
+		          print theme('links__system_main_menu', array('links' => $main_menu));
 				      }
 				      elseif (!empty($page['superfish_menu'])) {
 				        print render ($page['superfish_menu']);
@@ -204,6 +204,8 @@
 <?php endif; ?>
 </div> <!-- end footer wrapper -->
 
+<!--
 <div style="clear:both"></div>
 <div id="notice"><p>Theme by <a href="http://www.danetsoft.com">Danetsoft</a> and <a href="http://www.danpros.com">Danang Probo Sayekti</a> inspired by <a href="http://www.maksimer.no">Maksimer</a></p></div>
 </div>
+-->
